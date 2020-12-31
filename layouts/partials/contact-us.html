@@ -1,0 +1,19 @@
+<!-- tuck1s added email and phone parameters -->
+{{ $icon_size := "32px" }}
+
+{{ with .Param "email" }}
+<div>
+    <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+        href="mailto:{{ . }}?subject=Tutoring enquiry">
+        email: {{ . }}
+    </a>
+</div>
+{{ end }}
+
+{{ with .Param "phone" }}
+<div>
+    <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3">
+        phone: {{ . }}
+    </a>
+</div>
+{{ end }}
