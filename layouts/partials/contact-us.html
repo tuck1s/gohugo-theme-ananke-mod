@@ -3,17 +3,25 @@
 
 {{ with .Param "email" }}
 <div>
-    <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
-        href="mailto:{{ . }}?subject=Tutoring enquiry">
-        email: {{ . }}
+    <a class="f4 fw4 hover-white no-underline white dn dib-ns pv2 ph3" href="mailto:{{ . }}?subject=New Enquiry"
+        target="_blank">
+        {{ . }}
+    </a>
+</div>
+{{ end }}
+
+{{ with .Param "mobile" }}
+<div>
+    <a class="f4 fw4 hover-white no-underline white dn dib-ns pv2 ph3">
+        mobile: {{ . }}
     </a>
 </div>
 {{ end }}
 
 {{ with .Param "phone" }}
 <div>
-    <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3">
-        phone: {{ . }}
+    <a class="f4 fw4 hover-white no-underline white dn dib-ns pv2 ph3">
+        ☎︎ {{ . }}
     </a>
 </div>
 {{ end }}
